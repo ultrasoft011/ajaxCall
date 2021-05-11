@@ -1,23 +1,51 @@
 'use strict' ; 
 
-const openingHours = {
-    thu: {
-        hoursAM: 7,
-        hoursPM: 8
-    },
-    fri: {
-        hoursAM: 9,
-        hoursPM: 10
-    },
-    sat: {
-        hoursAM: 11,
-        hoursPM: 2
-    }
-}
+const rest = new Map();
+rest.set('name', 'Andrés Felipe')
+console.log(rest)
 
-for (const day of Object.values(openingHours)) {
-    console.log(day);
-}
+
+
+
+
+
+
+
+
+
+
+// console.log(new Set('Jonas'));  // create unique collections
+
+// const ordersSet = new Set( [
+//     'Pasta',
+//     'Pasta',
+//     'Pizza',
+//     'Rasto',
+//     'Pizza'
+// ]);
+
+// console.log(ordersSet)
+// console.log(ordersSet.size)
+
+
+// const openingHours = {
+//     thu: {
+//         hoursAM: 7,
+//         hoursPM: 8
+//     },
+//     fri: {
+//         hoursAM: 9,
+//         hoursPM: 10
+//     },
+//     sat: {
+//         hoursAM: 11,
+//         hoursPM: 2
+//     }
+// }
+
+// for (const day of Object.values(openingHours)) {
+//     console.log(day);
+// }
 
 
 
