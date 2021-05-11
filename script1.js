@@ -1,23 +1,31 @@
 'use strict' ; 
 
-const restaurant = {
+const [restaurant] = [{
     name: 'Classico Italiano',
     location: 'Via Angelo, Firenze, Italy',
     categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
     starterMenu: ['Focaccia', 'Bruschetta', 'Garlic'],
     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-};
+}];
 
-let [main, secondary] = restaurant.categories;
-[main, secondary] = [secondary, main]
-console.log(main, secondary);
+for (const item of restaurant.categories)
+
+console.log(item)
+
+// console.log(restaurant);
+// console.log(restaurant.categories[0]);
 
 
-const { name } = restaurant;
-const {
-    name: Monodeia
-} = restaurant;
-console.log(Monodeia);
+// let [main, secondary] = restaurant.categories;
+// [main, secondary] = [secondary, main]
+// console.log(main, secondary);
+
+
+// const { name } = restaurant;
+// const {
+//     name: Monodeia
+// } = restaurant;
+// console.log(Monodeia);
 
 // const [first, , third] = restaurant.categories;
 // console.log(first, third);
