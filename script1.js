@@ -1,16 +1,38 @@
 'use strict' ; 
 
-const [restaurant] = [{
-    name: 'Classico Italiano',
-    location: 'Via Angelo, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-}];
+const openingHours = {
+    thu: {
+        hoursAM: 7,
+        hoursPM: 8
+    },
+    fri: {
+        hoursAM: 9,
+        hoursPM: 10
+    },
+    sat: {
+        hoursAM: 11,
+        hoursPM: 2
+    }
+}
 
-for (const item of restaurant.categories)
+for (const day of Object.values(openingHours)) {
+    console.log(day);
+}
 
-console.log(item)
+
+
+
+// const [restaurant] = [{
+//     name: 'Classico Italiano',
+//     location: 'Via Angelo, Firenze, Italy',
+//     categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//     starterMenu: ['Focaccia', 'Bruschetta', 'Garlic'],
+//     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+// }];
+
+// for (const item of restaurant.categories)
+
+// console.log(item)
 
 // console.log(restaurant);
 // console.log(restaurant.categories[0]);
